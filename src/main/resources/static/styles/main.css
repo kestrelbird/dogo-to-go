@@ -20,29 +20,12 @@ a {
     font-family: "Palatino Linotype", serif;
     font-size: 10px;
 }
-.pic-source {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-}
 
 @media screen and (max-width: 768px) {
     body {
         background-image: url("../images/background-pic-vertical.jpg");
-        background-size: cover;
-        background-repeat: no-repeat;
     }
-
-    .message-container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
     h1 {
-        color: peru;
-        font-family: "Broadway", sans-seriff, serif;
         font-size: 0.9em;
     }
 }

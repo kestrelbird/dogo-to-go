@@ -8,13 +8,48 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 250px 0 50px 0;
+    margin: 250px 0 0;
 }
-h1 {
+.message-container > h1 {
+    color: #191919;
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 72px;
+}
+
+.message-container > h3 {
     color: peru;
-    font-family: "Broadway", serif;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
-a {
+.message-container > a {
+    font-family: "Lemonada", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    text-decoration: none;
+    background-color: sienna;
+    color: whitesmoke;
+    padding: 6px 24px;
+    border-radius: 4px;
+}
+.message-container > a:hover {
+    opacity: 90%;
+}
+.message-container > p {
+    color: #C0C0C0;
+    font-family: "Palatino Linotype", serif;
+    font-size: 12px;
+    padding: 50px 0 10px;
+    width: 50%;
+}
+
+p > a {
     color: gray;
     text-decoration: none;
     font-family: "Palatino Linotype", serif;
@@ -25,7 +60,28 @@ a {
     body {
         background-image: url("../images/background-pic-vertical.jpg");
     }
-    h1 {
-        font-size: 0.9em;
+    .message-container {
+        margin: 120px 10px 0 100px;
+    }
+    .message-container > h1 {
+        font-size: 54px;
+        text-align: right;
+    }
+    .message-container > h3 {
+        color: gray;
+        padding-bottom: 20px;
+        text-align: right;
+    }
+    .message-container > a {
+        background-color: peru;
+        padding: 6px 24px;
+        border-radius: 4px;
+        opacity: 90%;
+    }
+    .message-container > p {
+        font-size: 10px;
+        width: auto;
+        margin-top: 50px;
+        text-align: justify;
     }
 }

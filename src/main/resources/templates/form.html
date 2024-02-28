@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dogo to go</title>
+    <link rel="stylesheet" href="../static/styles/form.css" th:href="@{/styles/form.css}">
+    <link rel="stylesheet" href="../static/styles/main.css" th:href="@{/styles/main.css}">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Montserrat&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Lemonada&family=Montserrat&display=swap"
+          rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+    <h1>Wypełnij formularz</h1>
+    <form>
+        <fieldset>
+            <legend>Wybierz preferowane wartości</legend>
+            <label for="size">Wielkość
+                <select id="size">
+                    <option>Mały</option>
+                    <option>Średni</option>
+                    <option>Duży</option>
+                </select>
+            </label>
+            <label for="activity">Aktywność
+                <select id="activity">
+                    <option>Spacer jest fajny, ale wolę leżeć na kanapie</option>
+                    <option>Lubię zabawę o średniej intensywności</option>
+                    <option>Potrzebuję mnóstwa ruchu i zadań</option>
+                </select>
+            </label>
+            <label for="coatCare">Pielęgnacja
+                <select id="coatCare">
+                    <option>Nie potrzebuję wielu zabiegów</option>
+                    <option>Wymagam regularnej, ale umiarkowanej pielęgnacji</option>
+                    <option>Moja sierść wymaga częstej, intensywnej troski</option>
+                </select>
+            </label>
+            <div class="radio"></div>
+                <label>Wielkość
+                    <div>
+                        <input type="radio" id="small" name="size" value="1" checked />
+                        <label for="small">Mały</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="medium" name="size" value="2" />
+                        <label for="medium">Średni</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="large" name="size" value="3" />
+                        <label for="large">Duży</label>
+                    </div>
+                </label>
+                <label>Aktywność:
+                    <div>
+                        <input type="radio" id="activity1" name="activity" value="1" checked />
+                        <label for="activity1">Spacer jest fajny, ale wolę leżeć na kanapie</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="activity2" name="activity" value="2" />
+                        <label for="activity2">Lubię zabawę o średniej intensywności</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="activity3" name="activity" value="3" />
+                        <label for="activity3">Potrzebuję mnóstwa ruchu i zadań</label>
+                    </div>
+                </label>
+                <label>Pielęgnacja:
+                    <div>
+                        <input type="radio" id="coatCare1" name="coatCare" value="1" checked />
+                        <label for="coatCare1">Nie potrzebuję wielu zabiegów</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="coatCare2" name="coatCare" value="2" />
+                        <label for="coatCare2">Wymagam regularnej, ale umiarkowanej pielęgnacji</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" id="coatCare3" name="coatCare" value="3" />
+                        <label for="coatCare3">Moja sierść wymaga częstej, intensywnej troski</label>
+                    </div>
+                </label>
+        </fieldset>
+    </form>
+    <button type="submit" th:action="@{/outcome}">Pokaż wyniki</button>
+</div>
+</body>
+</html>

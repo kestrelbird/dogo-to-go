@@ -16,7 +16,7 @@
 <body>
 <div class="container">
     <h1>Wypełnij formularz</h1>
-    <form>
+    <form th:action="@{/outcome}" th:method="post" method="post">
         <fieldset>
             <legend>Wielkość</legend>
                     <div>
@@ -40,12 +40,10 @@
                         <input type="radio" id="activity1" name="activity" value="1" checked />
                         <label for="activity1">Spacer jest fajny, ale wolę leżeć na kanapie</label>
                     </div>
-
                     <div>
                         <input type="radio" id="activity2" name="activity" value="2" />
                         <label for="activity2">Lubię zabawę o średniej intensywności</label>
                     </div>
-
                     <div>
                         <input type="radio" id="activity3" name="activity" value="3" />
                         <label for="activity3">Potrzebuję mnóstwa ruchu i zadań</label>
@@ -57,19 +55,17 @@
                         <input type="radio" id="coatCare1" name="coatCare" value="1" checked />
                         <label for="coatCare1">Nie potrzebuję wielu zabiegów</label>
                     </div>
-
                     <div>
                         <input type="radio" id="coatCare2" name="coatCare" value="2" />
                         <label for="coatCare2">Wymagam regularnej, ale umiarkowanej pielęgnacji</label>
                     </div>
-
                     <div>
                         <input type="radio" id="coatCare3" name="coatCare" value="3" />
                         <label for="coatCare3">Moja sierść wymaga częstej, intensywnej troski</label>
                     </div>
         </fieldset>
     </form>
-    <button type="submit" th:action="@{/outcome}">Pokaż wyniki</button>
+    <button type="submit">Pokaż wyniki</button>
 </div>
 </body>
 </html>

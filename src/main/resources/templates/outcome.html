@@ -5,6 +5,17 @@
     <title>Dogo to go</title>
 </head>
 <body>
-    <p>testowy opis</p>
+    <div th:if="${dogs}">
+        <ul th:each="dog : ${dogs}">
+            <li th:text="${dog.breed}">Akita amerykańska</li>
+        </ul>
+    </div>
+    <div th:unless="${dogs}">
+        <p>Nie znaleziono rasy spełniającej wybrane kryteria</p>
+    </div>
+    <div>
+        <p>Alternatywna przyjacielska opcja</p>
+    </div>
+    <a th:href="@{/form}">[Wróć do formularza]</a>
 </body>
 </html>

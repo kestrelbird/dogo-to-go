@@ -16,7 +16,7 @@
 <body>
 <div class="container">
     <h1>Wypełnij formularz</h1>
-    <form th:action="@{/outcome}" th:method="post" method="post">
+    <form  th:action="@{/save}" th:method="post" action="/save" method="post">
         <fieldset>
             <legend>Wielkość</legend>
                     <div>
@@ -64,8 +64,11 @@
                         <label for="coatCare3">Moja sierść wymaga częstej, intensywnej troski</label>
                     </div>
         </fieldset>
+        <div>
+            <button type="submit">Pokaż wyniki</button>
+        </div>
     </form>
-    <button type="submit">Pokaż wyniki</button>
+
 </div>
 </body>
 </html>

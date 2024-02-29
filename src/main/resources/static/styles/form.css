@@ -59,6 +59,13 @@ button {
 button:hover {
     opacity: 80%;
 }
+form > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+}
 
 @media screen and (max-width: 768px) {
    .container {

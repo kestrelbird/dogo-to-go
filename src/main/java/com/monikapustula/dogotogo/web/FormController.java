@@ -36,11 +36,10 @@ public class FormController {
         return "outcome";
     }
     // TODO: 01.03.2024
-    // style for outcome
-    // change view to show pic (optimal resolution)
-    // add th:fragment for header
-    // Housekeeping for background pics (resolution, addresses) and styles links
+    // create authors.html
+    // style for outcome for mobile
+    // add th:fragment for header or layout
     // add validation
-    // add findAll() method for developing purposes
+    // consider api and security
 
 }

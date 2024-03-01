@@ -1,3 +1,8 @@
+body {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 .container {
     display: flex;
     flex-direction: column;
@@ -54,10 +59,10 @@ button {
     border: solid sienna;
     border-radius:4px;
     padding: 0 20px;
-    opacity: 1;
+    opacity: 80%;
 }
 button:hover {
-    opacity: 80%;
+    opacity: 1;
 }
 form > div {
     display: flex;
@@ -68,7 +73,10 @@ form > div {
 }
 
 @media screen and (max-width: 768px) {
-   .container {
+    body {
+        background-image: url("../images/background-vertical.jpg");
+    }
+    .container {
        margin-top: 120px;
        margin-left: 120px;
    }

@@ -1,0 +1,75 @@
+body {
+    background-image: url("../images/blank-background.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    color: #191919;
+}
+h1 {
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+}
+li {
+    list-style-type: none;
+    display: inline-grid;
+    padding: 4px;
+    text-align: center;
+}
+img {
+    border-radius: 4px;
+}
+li > span {
+    font-family: "Montserrat", serif, system-ui;
+    padding-top: 2px;
+}
+h2 {
+    font-family: "Dosis", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+.schroniskowiec {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+}
+.to-form-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.to-form-btn {
+    font-family: "Lemonada", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: whitesmoke;
+    background-color: sienna;
+    border: solid sienna;
+    border-radius:4px;
+    padding: 0 10px;
+    opacity: 80%;
+}
+.to-form-btn:hover {
+    opacity: 1;
+}
+.credit {
+    color: currentColor;
+    font-family: "Palatino Linotype", serif;
+    font-size: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url("../images/blank-background-vertical.jpg");
+    }
+}

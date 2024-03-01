@@ -1,5 +1,5 @@
 body {
-    background-image: url("../images/background-pic.jpg");
+    background-image: url("../images/background.jpg");
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -37,9 +37,10 @@ body {
     color: whitesmoke;
     padding: 6px 24px;
     border-radius: 4px;
+    opacity: 80%;
 }
 .message-container > a:hover {
-    opacity: 90%;
+    opacity: 1;
 }
 .message-container > p {
     color: #C0C0C0;
@@ -58,7 +59,7 @@ p > a {
 
 @media screen and (max-width: 768px) {
     body {
-        background-image: url("../images/background-pic-vertical.jpg");
+        background-image: url("../images/background-vertical.jpg");
     }
     .message-container {
         margin: 120px 10px 0 100px;

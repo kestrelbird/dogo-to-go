@@ -8,4 +8,5 @@ import java.util.List;
 @Repository
 public interface DogRepository extends CrudRepository<Dog, Long> {
      List<Dog> findAllBySizeAndActivityAndCoatCare(int size, int activity, int coatCare);
+     List<Dog> findAll();
 }

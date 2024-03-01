@@ -20,4 +20,12 @@ public class DogService {
                 .map(DogDtoMapper::map)
                 .toList();
     }
+
+    /* Method for developing  purposes */
+    public List<DogDto> getAllDogs() {
+        return dogRepository.findAll()
+                .stream()
+                .map(DogDtoMapper::map)
+                .toList();
+    }
 }

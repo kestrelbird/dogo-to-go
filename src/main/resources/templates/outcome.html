@@ -2,20 +2,43 @@
 <html lang="pl" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Dogo to go</title>
+    <link rel="stylesheet" href="../static/styles/main.css" th:href="@{/styles/outcome.css}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Montserrat&display=swap"
+          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Lemonada&family=Montserrat&display=swap"
+          rel="stylesheet">
 </head>
 <body>
-    <div th:if="${dogs}">
-        <ul th:each="dog : ${dogs}">
-            <li th:text="${dog.breed}">Akita amerykańska</li>
+<main>
+    <div th:unless="${dogs.isEmpty()}">
+        <h1>Rasy spełniające podane kryteria:</h1>
+        <ul>
+            <li th:each="dog : ${dogs}">
+                <img th:src="@{|/images/breeds/${dog.getFileName()}|}"
+                     src="../static/images/breeds/akita-amerykańska.jpg" th:alt="${dog.breed}" alt="Akita amerykańska">
+                <span th:text="${dog.breed}">Akita amerykańska></span>
+            </li>
         </ul>
     </div>
-    <div th:unless="${dogs}">
-        <p>Nie znaleziono rasy spełniającej wybrane kryteria</p>
+    <div th:if="${dogs.isEmpty()}">
+        <h1>Nie znaleziono rasy spełniającej wybrane kryteria</h1>
     </div>
-    <div>
-        <p>Alternatywna przyjacielska opcja</p>
+    <div class="schroniskowiec">
+        <h2>Alternatywna przyjacielska opcja &mdash; adopcja!</h2>
+        <img th:src="@{|/images/breeds/schroniskowiec.jpg|}" src="../static/images/breeds/schroniskowiec.jpg"
+             th:alt="schroniskowiec" alt="schroniskowiec">
     </div>
-    <a th:href="@{/form}">[Wróć do formularza]</a>
+    <div class="to-form-div">
+        <a class="to-form-btn" th:href="@{/form}">Wróć do formularza</a>
+    </div>
+</main>
+<aside>
+    <a class="credit" th:href="@{/credit}">[Poznaj autorów zdjęć]</a>
+</aside>
 </body>
 </html>

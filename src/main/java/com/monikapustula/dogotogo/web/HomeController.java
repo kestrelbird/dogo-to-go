@@ -10,4 +10,10 @@ public class HomeController {
     String home() {
         return "index";
     }
+
+    @GetMapping("/credit")
+    String authors() {
+        return "authors";
+    }
 }
+

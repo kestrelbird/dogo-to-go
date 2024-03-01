@@ -8,7 +8,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import java.util.ArrayList;
 import java.util.List;
 
 @Controller
@@ -36,4 +35,12 @@ public class FormController {
         model.addAttribute("dogs", dogs);
         return "outcome";
     }
+    // TODO: 01.03.2024
+    // style for outcome
+    // change view to show pic (optimal resolution)
+    // add th:fragment for header
+    // Housekeeping for background pics (resolution, addresses) and styles links
+    // add validation
+    // add findAll() method for developing purposes
+
 }

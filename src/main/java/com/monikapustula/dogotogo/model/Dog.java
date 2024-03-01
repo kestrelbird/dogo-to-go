@@ -14,6 +14,7 @@ public class Dog {
     private int size;
     private int activity;
     private int coatCare;
+    private String fileName;
 
 
     public Long getId() {
@@ -54,5 +55,13 @@ public class Dog {
 
     public void setCoatCare(int coatCare) {
         this.coatCare = coatCare;
+    }
+
+    public String getFileName() {
+        return fileName;
+    }
+
+    public void setFileName(String fileName) {
+        this.fileName = fileName;
     }
 }

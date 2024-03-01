@@ -7,5 +7,5 @@ import java.util.List;
 
 @Repository
 public interface DogRepository extends CrudRepository<Dog, Long> {
-    public List<Dog> findAllBySizeAndActivityAndCoatCare(int size, int activity, int coatCare);
+     List<Dog> findAllBySizeAndActivityAndCoatCare(int size, int activity, int coatCare);
 }

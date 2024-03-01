@@ -6,7 +6,8 @@ import org.springframework.stereotype.Service;
 public class DogDtoMapper {
     public static DogDto map(Dog dog) {
         return new DogDto(
-                dog.getBreed()
+                dog.getBreed(),
+                dog.getFileName()
         );
     }
 }

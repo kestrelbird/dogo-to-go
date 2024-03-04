@@ -36,9 +36,9 @@ public class FormController {
         return "outcome";
     }
     // TODO: 01.03.2024
-    // create authors.html
     // style for outcome for mobile
     // add th:fragment for header or layout
+    // implement prod profile
     // add validation
     // consider api and security
 

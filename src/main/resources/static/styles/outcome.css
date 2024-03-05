@@ -62,14 +62,21 @@ a {
 .to-form-btn:hover {
     opacity: 1;
 }
+footer > p,
 .credit {
-    color: currentColor;
-    font-family: "Palatino Linotype", serif;
+    color: #191919;
+    font-family: "Montserrat", serif;
     font-size: 10px;
+    text-decoration: none;
 }
 
 @media screen and (max-width: 768px) {
     body {
         background-image: url("../images/blank-background-vertical.jpg");
+    }
+    footer > p,
+    .credit {
+        text-align: right;
+        display: block;
     }
 }

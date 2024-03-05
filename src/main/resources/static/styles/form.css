@@ -71,6 +71,11 @@ form > div {
     justify-content: center;
     justify-items: center;
 }
+footer > p {
+    color: #191919;
+    font-family: "Montserrat", serif;
+    font-size: 10px;
+}
 
 @media screen and (max-width: 768px) {
     body {
@@ -93,5 +98,9 @@ form > div {
     }
     input[type="radio"]:checked {
         border: 4px solid peru;
+    }
+    footer > p {
+        text-align: right;
+        display: block;
     }
 }

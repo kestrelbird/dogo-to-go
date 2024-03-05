@@ -1,18 +1,19 @@
 <!DOCTYPE html>
-<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<html lang="pl" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dogo to go</title>
     <link rel="stylesheet" th:href="@{/styles/authors.css}" href="../static/styles/authors.css">
 </head>
 <body>
+<main layout:fragment="content">
     <p>
         W aplikacji wykorzystano obrazy z baz <a href="https://www.freepik.com/">Freepik</a>,
         <a href="https://pixabay.com/">Pixabay</a> oraz z sieci. Poniżej znajduje się lista obrazów wymagających uznania autorstwa
         wraz z odnośnikami prowadzącymi do zasobu.
     </p>
     <ul>
+        <li><a href="https://pl.freepik.com/darmowe-wektory/rama-z-wektorem-psow-na-bialym-tle_17432981.htm#query=pies&position=34&from_view=search&track=sph&uuid=fb93f74d-1c7a-4948-88cd-899022eeba85">Obraz w tle</a></li>
         <li><a href="https://pl.freepik.com/darmowe-zdjecie/duzy-czarny-pies-na-zewnatrz-w-parku_4201606.htm#from_view=detail_alsolike">Nowofundland</a></li>
         <li><a href="https://pl.freepik.com/darmowe-zdjecie/pies-chartow-cieszacy-sie-spacerem_34674971.htm#fromView=search&page=1&position=1&uuid=3f2036d7-5db0-455f-a13a-9b4f1d9488bc">Whippet</a></li>
         <li><a href="https://pl.wikipedia.org/wiki/Go%C5%84czy_polski#/media/Plik:%D0%A4%D0%B0%D0%B3%D0%BE%D1%82_3%D0%B0_-%D0%BB%D1%83%D1%87%D1%88%D0%B0%D1%8F.jpg">Gończy polski</a></li>
@@ -24,5 +25,7 @@
         <li><a href="https://justusdogs.com.au/wp-content/uploads/2023/04/blue-picardy-spaniel-851644.jpg-1200x1024.webp">Spaniel pikardyjski</a></li>
         <li><a href="https://www.zoo-mar.pl/wp-content/uploads/2019/07/Komondor-%E2%80%93-pies-z-dredami.jpg">Komondor</a></li>
     </ul>
+</main>
+<footer></footer>
 </body>
 </html>

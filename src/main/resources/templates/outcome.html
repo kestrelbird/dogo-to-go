@@ -1,20 +1,12 @@
 <!DOCTYPE html>
-<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<html lang="pl" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout}">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Dogo to go</title>
     <link rel="stylesheet" href="../static/styles/main.css" th:href="@{/styles/outcome.css}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Montserrat&display=swap"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Dosis:wght@300&family=Lemonada&family=Montserrat&display=swap"
-          rel="stylesheet">
 </head>
 <body>
-<main>
+<main layout:fragment="content">
     <div th:unless="${dogs.isEmpty()}">
         <h1>Rasy spełniające podane kryteria:</h1>
         <ul>
@@ -36,9 +28,12 @@
     <div class="to-form-div">
         <a class="to-form-btn" th:href="@{/form}">Wróć do formularza</a>
     </div>
+    <div>
+        <a class="credit" th:href="@{/credit}">[Poznaj autorów zdjęć]</a>
+    </div>
 </main>
-<aside>
+<footer>
     <a class="credit" th:href="@{/credit}">[Poznaj autorów zdjęć]</a>
-</aside>
+</footer>
 </body>
 </html>

@@ -74,6 +74,20 @@ footer > p,
     body {
         background-image: url("../images/blank-background-vertical.jpg");
     }
+    li {
+        text-align: justify;
+    }
+    img {
+        max-width: 50%;
+        height: auto;
+    }
+    .schroniskowiec {
+        text-align: center;
+    }
+    .to-form-btn {
+        background-color: peru;
+        border-color: peru;
+    }
     footer > p,
     .credit {
         text-align: right;

@@ -35,9 +35,9 @@ public class FormController {
         model.addAttribute("dogs", dogs);
         return "outcome";
     }
+
     // TODO: 01.03.2024
-    // add validation
-    // implement prod profile
-    // consider api and security
+    // add validation, api and security
+
 
 }

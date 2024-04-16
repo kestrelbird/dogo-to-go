@@ -1,0 +1,8 @@
+spring:
+  liquibase:
+    contexts: prod
+  datasource:
+    url: jdbc:mysql://mysql:3306/dogo_to_go
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: dogo_to_go
+    password: 786CGFD.nbheV
